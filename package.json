@@ -1,6 +1,6 @@
 {
   "name": "gapi-v3-repl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "REPL for Gateway API V3",
   "main": "gapi_v3_repl.js",
   "dependencies": {

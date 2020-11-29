@@ -43,7 +43,7 @@ This example uses the default setup of the Netrunr gateway:
 
 Run the nodejs application to collect NFC scan indications:
 
-`node --experimental-repl-await .\gapi-v3-repl3.js -h "192.168.8.1" -p 1883 -t "netrunrfe"`
+`node --experimental-repl-await .\gapi-v3-repl.js -h "192.168.8.1" -p 1883 -t "netrunrfe"`
 
 To force exit at any time, use:
 
@@ -53,7 +53,7 @@ To force exit at any time, use:
 
 The `tls` flag will enable operation over MQTTS. This mode will use client certificates and collect data over secure link:
 
-`node --experimental-repl-await .\gapi-v3-repl3.js -h 'yourmqtthostname.com' -p 8883 -t 'netrunrfe' --tls --ca-filename='./yourRootCA.pem' --key-filename='./your-private-key.pem.key' --crt-filename='./your-client-certificate.pem.crt'`
+`node --experimental-repl-await .\gapi-v3-repl.js -h 'yourmqtthostname.com' -p 8883 -t 'netrunrfe' --tls --ca-filename='./yourRootCA.pem' --key-filename='./your-private-key.pem.key' --crt-filename='./your-client-certificate.pem.crt'`
 
 To force exit at any time, use:
 
