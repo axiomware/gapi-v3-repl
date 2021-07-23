@@ -144,7 +144,7 @@ main()
 async function main () {
   // Print the welcome message
   console.log(`
-  Hello, ${process.env.USER}!
+  Hello, ${process.env.USER || ""}!
   You're running the Node.js REPL in ${process.cwd()}.
   `);
   
@@ -152,7 +152,7 @@ async function main () {
   await gNetrunrClient.init(gHostFE, gPortFE, gOptionsFE, gTopicPrefixFE, gTLS)
 
   // Start the REPL
-  const repl = Repl.start({ prompt });
+  const repl = Repl.start({ prompt }, null, null, null, true);
 
   // Export functions into REPL context
   repl.context.gNetrunrClient = gNetrunrClient;
